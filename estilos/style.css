@@ -9,55 +9,37 @@
 html, body {
     height: 100vh;
     width: 100vw;
-    background-color: black;
+    background-color: red;
 }
 
 body {
-    background: url('../imagens/fundo-madeira.jpg') no-repeat top center;/* Os ultimos parametros sao para nao repitir e alinahr no topo ao centro. */
-    background-size: cover;/* o fundo cobrira a tela inteira.*/
-    background-attachment: fixed;/* a pagina ficara fixa sem rolagem.*/
+    background: url('../imagens/fundo-madeira.jpg') no-repeat top center;/* nesse caso o seletor so presiza 'ser backgrond' a imagem ira funcionar.*/
+    background-size: cover;/*cover quer dizer cobrir, entao e tamanho do background : cobrir.*/
+    background-attachment: fixed;
+    
 }
 
 main {
-   height: 100vh;
-   position: relative;  
+    position: relative;
+    height: 100vh;
 }
 
 section#telefone {
     position: absolute;
-    transform: translate(-50%, -50%);
-    left: 50%;
     top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-    height: 650px;
-    width: 500px;   
+    height: 627px;
+    width: 311px;
+    
     background: url('../imagens/frame-iphone.png') no-repeat;
 }
 
 iframe#tela {
-  position: relative;
-  top: 81px;
-  left: 23px;
-  width: 265px;
-  height: 468px;
-}
-
-section#redes-sociais {
-    text-align: right;
-}
-
-
-section#redes-sociais img {
-    width: 50px;
-    margin: 10px;
-    border-radius: 50%;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.394);
-    box-sizing: border-box;/* essa propriedade faz com que a borda faça parte da caixa isso ajuda a menter as animaçoes quando o mause passar emcima e nao afastar a outra caixa.*/
-}
-
-section#redes-sociais img:hover {
-    border: 2px solid rgba(255, 255, 255, 0.587);
-    transform: translate(-3px, -3px);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.605);
-    transition: .3s;
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 267px;
+    height: 471px;
 }
